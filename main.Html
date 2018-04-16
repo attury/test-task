@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta/ charset="UTF-8">
+		
+		<title>
+			Тестовое задание JS
+		</title>
+		
+	</head>
+		
+		
+		
+	<body>
+		Фото
+		
+				
+		<div id="instafeed"></div>
+	
+		<script src="instafeed.min.js" type="text/javascript" ></script>
+
+		<script type="text/javascript">
+			var userFeed = new Instafeed({
+				get: "user",
+				userId: "7472414447",
+				limit: 30,
+				resolution: "standard_resolution",
+				accessToken: "3b7e21fe5bef46708fac3f2c99852418",
+				sortBy: "most-resent",
+				template: "<div></div>",
+			});
+			
+			userFeed.run();
+		</script>
+	</body>
+</html>
